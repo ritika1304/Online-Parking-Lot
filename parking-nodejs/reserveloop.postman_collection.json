@@ -1,0 +1,1179 @@
+{
+	"info": {
+		"_postman_id": "a6c7b3d8-0c36-4348-846a-ab9d4efc5a73",
+		"name": "reserveloop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15760552"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "parking",
+					"item": [
+						{
+							"name": "addparking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODVkZTc2NDA2ODUyZTgyYmRhODk4MSIsImlhdCI6MTY1MzM2NzM3Nn0.5BuYCEZR7vBnYaQMTqCCzVuwx7EPbt4zwJBlK-AvH5M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "parkingname",
+											"value": "Parking 4",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "jalandhar",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "53.5",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "110",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "35432154",
+											"type": "text"
+										},
+										{
+											"key": "parkingowner",
+											"value": "kulwinder",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "jalandhar",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "parking4@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/addparking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"addparking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show parking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODVkZTc2NDA2ODUyZTgyYmRhODk4MSIsImlhdCI6MTY1MzM2NzM3Nn0.5BuYCEZR7vBnYaQMTqCCzVuwx7EPbt4zwJBlK-AvH5M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:3001/admin/showparking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"showparking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update parking",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/updateparking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"updateparking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete parking",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "626d6ed8606ee44eb6142758",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/deleteparking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"deleteparking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "slot",
+					"item": [
+						{
+							"name": "addslots",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "twowhslot",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "threewhslot",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "fourwhslot",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "twowhcostperhour",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "threewhcostperhour",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "fourwhcostperhour",
+											"value": "30",
+											"type": "text"
+										},
+										{
+											"key": "twowhcostperday",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "threewhcostperday",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "fourwhcostperday",
+											"value": "300",
+											"type": "text"
+										},
+										{
+											"key": "parkingId",
+											"value": "6285e09fe2ef5e560fb5b809",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/addslots",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"addslots"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showslots",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/showslots",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"showslots"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateslot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/updateslots",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"updateslots"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteslot",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/deleteslots",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"deleteslots"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetchslotbyid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/fetchslotbyid",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"fetchslotbyid"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "city",
+					"item": [
+						{
+							"name": "addcity",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cityName",
+											"value": "Phagwara",
+											"type": "text"
+										},
+										{
+											"key": "cityImage",
+											"type": "file",
+											"src": "/C:/Users/Dell Optiplex/Desktop/images/noImage.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/addcity",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"addcity"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatecity",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/updatecity",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"updatecity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showcity",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/showcity",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"showcity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletcity",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:3001/admin/deletecity",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"deletecity"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "showallusers",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/admin/alluser",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"alluser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "6272cf4664c23ee8b25cc03b",
+											"type": "text"
+										},
+										{
+											"key": "FirstName",
+											"value": "tanvi",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/updateuser",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"updateuser"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "booking",
+					"item": [
+						{
+							"name": "All Bookings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "customerId",
+											"value": "6285df5f24b976ca91a87335",
+											"description": "//filters",
+											"type": "text"
+										},
+										{
+											"key": "parkingId",
+											"value": "6285e08de2ef5e560fb5b807",
+											"description": "//filters",
+											"type": "text"
+										},
+										{
+											"key": "isCheckedIn",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "isCheckedOut",
+											"value": "false",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/allBookings",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"allBookings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CheCk In Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM2ODY3ZDg4MTYxOTFkMzIwZGY5ZSIsImlhdCI6MTY1Mzg4MzEwM30.GUmE7xPx2Hzu2MyRH3bw4Pz6VVFfwalyaogTAJ4gTts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "629440c2c587e23fd0df94bc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/checkIn",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"checkIn"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check Out Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM2ODY3ZDg4MTYxOTFkMzIwZGY5ZSIsImlhdCI6MTY1Mzg4MzEwM30.GUmE7xPx2Hzu2MyRH3bw4Pz6VVFfwalyaogTAJ4gTts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "629440c2c587e23fd0df94bc",
+											"type": "text"
+										},
+										{
+											"key": "penalty",
+											"value": "50",
+											"type": "text"
+										},
+										{
+											"key": "penaltyReason",
+											"value": "testing",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/checkOut",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"checkOut"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "Admin dashboard",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM2ODY3ZDg4MTYxOTFkMzIwZGY5ZSIsImlhdCI6MTY1Mzg4MzEwM30.GUmE7xPx2Hzu2MyRH3bw4Pz6VVFfwalyaogTAJ4gTts",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3001/admin/dashboardAdmin",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"dashboardAdmin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard Parking",
+					"item": [
+						{
+							"name": "Parking dashboard",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM2ODY3ZDg4MTYxOTFkMzIwZGY5ZSIsImlhdCI6MTY1Mzg4MzEwM30.GUmE7xPx2Hzu2MyRH3bw4Pz6VVFfwalyaogTAJ4gTts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "parkingId",
+											"value": "628c6d3cd8816191d320dfbb",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/dashboardParking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"dashboardParking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "vehicle",
+					"item": [
+						{
+							"name": "addvehicle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "vehiclename",
+											"value": "Car",
+											"type": "text"
+										},
+										{
+											"key": "vehicletype",
+											"value": "2",
+											"description": "//1- two wheeler , 2= three wheeler 3=> four wheeler\n",
+											"type": "text"
+										},
+										{
+											"key": "vehiclemodel",
+											"value": "BMW",
+											"type": "text"
+										},
+										{
+											"key": "customerId",
+											"value": "6285df5f24b976ca91a87335",
+											"type": "text"
+										},
+										{
+											"key": "vehiclenumber",
+											"value": "pb08rf56718",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/addvehicle",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"addvehicle"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showvehicle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:3001/user/showvehicle",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"showvehicle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "allcity",
+					"item": [
+						{
+							"name": "allcity",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:3001/user/allcity",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"allcity"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "userinfo",
+					"item": [
+						{
+							"name": "adduser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "FirstName",
+											"value": "tanveer",
+											"type": "text"
+										},
+										{
+											"key": "LastName",
+											"value": "kaur",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "8965664856",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "tanveerkaur@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/addperson",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"addperson"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/user/showperson",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"showperson"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "627121c96a669354e90b0520",
+											"type": "text"
+										},
+										{
+											"key": "FirstName",
+											"value": "sanyal",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/updateperson",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"updateperson"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteuser",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/user/deleteperson",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"deleteperson"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "loginuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "parking4@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/loginuser",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"loginuser"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "All Parkings",
+					"item": [
+						{
+							"name": "show parking",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "cityId",
+											"value": "6285e2612ae76167f43f2817",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/showparking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"showparking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Parking Slots",
+					"item": [
+						{
+							"name": "showslots",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "parkingId",
+											"value": "6285e08de2ef5e560fb5b807",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/showslots",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"showslots"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetchslotbyid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "6285e154e2ef5e560fb5b80c",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/admin/fetchslotbyid",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"fetchslotbyid"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Booking",
+					"item": [
+						{
+							"name": "Add Booking",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "parkingId",
+											"value": "628c6d3cd8816191d320dfbb",
+											"type": "text"
+										},
+										{
+											"key": "customerId",
+											"value": "628f05fa8651d66965eef47f",
+											"type": "text"
+										},
+										{
+											"key": "bookingType",
+											"value": "1",
+											"description": "1- per hour , 1- perday",
+											"type": "text"
+										},
+										{
+											"key": "count",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "bookingAmount",
+											"value": "200",
+											"description": "//calculate and send ( count * respective price)",
+											"type": "text"
+										},
+										{
+											"key": "bookingDate",
+											"value": "2022-05-30",
+											"description": "yyyy-mm-dd",
+											"type": "text"
+										},
+										{
+											"key": "vehicleId",
+											"value": "628f08cc8651d66965eef4a2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/addBooking",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"addBooking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get My Bookings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "customerId",
+											"value": "6285df5f24b976ca91a87335",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3001/user/allBookings",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"allBookings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
